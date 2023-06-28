@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="styles/styles.css">
+    <title>Nerds</title>
+  </head>
+  <body>
+    <header class="catalog-header">
+      <img class="logo" src="#" alt="logo">
+      <nav class="header-nav">
+        <ul class="navigation-list">
+          <li class="navigation-item">
+            <a class="navigation-link" href="#">Студия</a>
+          </li>
+          <li class="navigation-item">
+            <a class="navigation-link" href="#">Клиенты</a>
+          </li>
+          <li class="navigation-item">
+            <a class="navigation-link" href="catalog.html">Магазин</a>
+          </li>
+          <li class="navigation-item">
+            <a class="navigation-link" href="#">Контакты</a>
+          </li>
+        </ul>
+        <img class="basket-logo" src="#" alt="basket">
+        <a class="basket" href="#">Корзина</a>
+      </nav>
+    </header>
+    <main class="catalog-main">
+      <section class="hero">
+        <h1 class="title">Магазин готовых шаблонов</h1>
+      </section>
+      <form class="filter" action="#" method="get">
+        <fieldset class="filter-cost">
+          <legend class="filter-cost-title">Стоимость:</legend>
+          <div class="fieldset-wrapper">
+            <div class="cost-range">
+              <button class="button-cost" type="button">
+                <span class="visually-hidden">установить минимальную стоимость</span>
+              </button>
+              <button class="button-cost" type="button">
+                <span class="visually-hidden">установить максимальную стоимость</span>
+              </button>
+              <span class="cost-range line"></span>
+              <span class="cost-range line active"></span>
+            </div>
+            <div class="filter-range">
+              <input class="cost-min" type="number" step="100" placeholder="цена от" aria-label="минимальная стоимость"
+                value="0">
+              <input class="cost-max" type="number" step="100" placeholder="цена до" aria-label="максимальная стоимость"
+                value="15000">
+            </div>
+          </div>
+        </fieldset>
+        <fieldset class="filter-group">
+          <legend class="filter-group-title">Сетка:</legend>
+          <ul class="filter-group-list">
+            <li class="filter-group-item">
+              <label class="control">
+                <input class="input-radio" type="radio" name="hotel-type" value="hotel" checked>
+                Адаптивная
+              </label>
+            </li>
+            <li class="filter-group-item">
+              <label class="control">
+                <input class="input-radio" type="radio" name="hotel-type" value="motel">
+                Фиксированная
+              </label>
+            </li>
+            <li class="filter-group-item">
+              <label class="control">
+                <input class="input-radio" type="radio" name="hotel-type" value="apartments">
+                Резиновая
+              </label>
+            </li>
+          </ul>
+        </fieldset>
+        <fieldset class="catalog-filter-group">
+          <legend class="filter-group-title">Особенности:</legend>
+          <ul class="filter-group-list">
+            <li class="filter-group-item">
+              <label class="control">
+                <input class="input-checkbox" type="checkbox" name="pool" checked>
+                Слайдер
+              </label>
+            </li>
+            <li class="filter-group-item">
+              <label class="control">
+                <input class="input-checkbox" type="checkbox" name="parking">
+                Блок преимуществ
+              </label>
+            </li>
+            <li class="filter-group-item">
+              <label class="control">
+                <input class="input-checkbox" type="checkbox" name="Wi-Fi" checked>
+                Новости
+              </label>
+            </li>
+            <li class="filter-group-item">
+              <label class="control">
+                <input class="input-checkbox" type="checkbox" name="Wi-Fi">
+                Галерея
+              </label>
+            </li>
+            <li class="filter-group-item">
+              <label class="control">
+                <input class="input-checkbox" type="checkbox" name="Wi-Fi">
+                Корзина
+              </label>
+            </li>
+          </ul>
+        </fieldset>
+      </form>
+      <section class="sort">
+        <h3 class="title">Сортировать:</h3>
+        <select class="select-control" aria-label="Сортировка">
+          <option value="cost">По цене</option>
+          <option value="type">По типу</option>
+          <option value="name">По названию</option>
+        </select>
+        <div class="sort-wrapper">
+          <img src="#" alt="макет седоны">
+          <img src="#" alt="макет Pink">
+          <img src="#" alt="макет Barbershop">
+          <img src="#" alt="макет Mishka">
+          <img src="#" alt="макет Academy">
+          <img src="#" alt="макет Кваст">
+        </div>
+      </section>
+      <ul class="pagination">
+        <li class="pagination-item">
+          <a class="pagination-link pagination-current" href="#">1</a>
+        </li>
+        <li class="pagination-item">
+          <a class="pagination-link" href="#">2</a>
+        </li>
+        <li class="pagination-item">
+          <a class="pagination-link" href="#">3</a>
+        </li>
+        <li class="pagination-item">
+          <button class="button button-pagination" type="button">Следующая</a>
+        </li>
+      </ul>
+    </main>
+    <footer class="index-footer">
+      <section class="map">
+        <div class="text-wrapper">
+          <h3 class="title">Nёrds design studio</h3>
+          <p class="description">191186, Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</p>
+          <p class="description">тел. +7 (812) 275-75-75</p>
+          <button class="button button-write">Напишите нам</button>
+        </div>
+        <img src="#" alt="logo">
+        <img src="#" alt="Карта">
+      </section>
+      <section class="social">
+        <ul class="social-list">
+          <li class="social-list-item">
+            <a class="social-link">
+              <span class="visually-hidden">Вконтакте</span>
+            </a>
+          </li>
+          <li class="social-list-item">
+            <a class="social-link">
+              <span class="visually-hidden">Facebook</span>
+            </a>
+          </li>
+          <li class="social-list-item">
+            <a class="social-link">
+              <span class="visually-hidden">Instagram</span>
+            </a>
+          </li>
+        </ul>
+        <div class="text-wrapper">
+          <h2 class="title">Давайте дружить, это выгодно!</h2>
+          <p class="description">Скидка 10% для друзей из социальных сетей.</p>
+        </div>
+      </section>
+    </footer>
+  </body>
+</html>
