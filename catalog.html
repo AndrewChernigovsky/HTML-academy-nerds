@@ -23,7 +23,6 @@
             <a class="navigation-link" href="#">Контакты</a>
           </li>
         </ul>
-        <img class="basket-logo" src="#" alt="basket">
         <a class="basket" href="#">Корзина</a>
       </nav>
     </header>
@@ -111,21 +110,64 @@
             </li>
           </ul>
         </fieldset>
+        <button class="button button-filter" type="button">Показать</button>
       </form>
       <section class="sort">
-        <h3 class="title">Сортировать:</h3>
+        <p class="title">Сортировать:</p>
         <select class="select-control" aria-label="Сортировка">
           <option value="cost">По цене</option>
           <option value="type">По типу</option>
           <option value="name">По названию</option>
         </select>
         <div class="sort-wrapper">
-          <img src="#" alt="макет седоны">
-          <img src="#" alt="макет Pink">
-          <img src="#" alt="макет Barbershop">
-          <img src="#" alt="макет Mishka">
-          <img src="#" alt="макет Academy">
-          <img src="#" alt="макет Кваст">
+          <div class="sort-item">
+            <img src="#" alt="макет седоны">
+            <div class="sort-item-info">
+              <h3 class="title">Sedona</h3>
+              <p class="description">Информационный сайт для туристов</p>
+              <button class="button button-info">9 900 ₽</button>
+            </div>
+          </div>
+          <div class="sort-item">
+            <img src="#" alt="макет Pink">
+            <div class="sort-item-info">
+              <h3 class="title">Pink App</h3>
+              <p class="description">Продуктовый лендинг приложения для iOS и Android</p>
+              <button class="button button-info">9 900 ₽</button>
+            </div>
+          </div>
+          <div class="sort-item">
+            <img src="#" alt="макет Barbershop">
+            <div class="sort-item-info">
+              <h3 class="title">Barbershop</h3>
+              <p class="description">Сайт салона красоты. Для мужчин, да.</p>
+              <button class="button button-info">9 900 ₽</button>
+            </div>
+          </div>
+          <div class="sort-item">
+            <img src="#" alt="макет Mishka">
+            <div class="sort-item-info">
+              <h3 class="title">Mishka</h3>
+              <p class="description">Интернет-магазин вязаных игрушек</p>
+              <button class="button button-info">9 900 ₽</button>
+            </div>
+          </div>
+          <div class="sort-item">
+            <img src="#" alt="макет A Plus">
+            <div class="sort-item-info">
+              <h3 class="title">A Plus</h3>
+              <p class="description">Лендинг курсов повышения квалификации</p>
+              <button class="button button-info">9 900 ₽</button>
+            </div>
+          </div>
+          <div class="sort-item">
+            <img src="#" alt="макет Кваст">
+            <div class="sort-item-info">
+              <h3 class="title">Кваст</h3>
+              <p class="description">Промо-сайт производителя крафтого кваса</p>
+              <button class="button button-info">9 900 ₽</button>
+            </div>
+          </div>
         </div>
       </section>
       <ul class="pagination">
@@ -139,7 +181,7 @@
           <a class="pagination-link" href="#">3</a>
         </li>
         <li class="pagination-item">
-          <button class="button button-pagination" type="button">Следующая</a>
+          <a class="pagination-link" href="#">Следующая</a>
         </li>
       </ul>
     </main>
