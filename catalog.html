@@ -28,27 +28,27 @@
     </header>
     <main class="catalog-main">
       <section class="hero">
-        <h1 class="title">Магазин готовых шаблонов</h1>
+        <h2 class="title">Магазин готовых шаблонов</h2>
       </section>
       <form class="filter" action="#" method="get">
         <fieldset class="filter-cost">
           <legend class="filter-cost-title">Стоимость:</legend>
           <div class="fieldset-wrapper">
             <div class="cost-range">
-              <button class="button-cost" type="button">
+              <button class="button-cost" type="button" id="min-cost">
                 <span class="visually-hidden">установить минимальную стоимость</span>
               </button>
-              <button class="button-cost" type="button">
+              <button class="button-cost" type="button" id="max-cost">
                 <span class="visually-hidden">установить максимальную стоимость</span>
               </button>
-              <span class="cost-range line"></span>
-              <span class="cost-range line active"></span>
+              <span class="cost-range line" id="line"></span>
+              <span class="cost-range line active" id="line-active"></span>
             </div>
             <div class="filter-range">
               <input class="cost-min" type="number" step="100" placeholder="цена от" aria-label="минимальная стоимость"
-                value="0">
+                value="0" id="min">
               <input class="cost-max" type="number" step="100" placeholder="цена до" aria-label="максимальная стоимость"
-                value="15000">
+                value="15000" id="max">
             </div>
           </div>
         </fieldset>
@@ -220,5 +220,6 @@
         </div>
       </section>
     </footer>
+    <script src="script.js"></script>
   </body>
 </html>
