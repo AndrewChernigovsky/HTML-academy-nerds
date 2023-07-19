@@ -6,9 +6,9 @@
     <title>Nerds</title>
   </head>
   <body>
-    <header class="index-header">
+    <header class="header">
       <img class="logo" src="#" alt="logo">
-      <nav class="header-nav">
+      <nav class="nav">
         <ul class="navigation-list">
           <li class="navigation-item">
             <a class="navigation-link" href="#">Студия</a>
@@ -23,13 +23,11 @@
             <a class="navigation-link" href="#">Контакты</a>
           </li>
         </ul>
-        <a class="basket" href="#">Корзина</a>
+        <a class="card" href="#">Корзина</a>
       </nav>
     </header>
-    <main class="catalog-main">
-      <section class="hero">
-        <h2 class="title">Магазин готовых шаблонов</h2>
-      </section>
+    <main class="main">
+      <h2 class="title">Магазин готовых шаблонов</h2>
       <form class="filter" action="#" method="get">
         <fieldset class="filter-cost">
           <legend class="filter-cost-title">Стоимость:</legend>
@@ -45,9 +43,9 @@
               <span class="cost-range line active" id="line-active"></span>
             </div>
             <div class="filter-range">
-              <input class="cost-min" type="number" step="100" placeholder="цена от" aria-label="минимальная стоимость"
+              <input class="cost-min" type="number" min="0" placeholder="цена от" aria-label="минимальная стоимость"
                 value="0" id="min">
-              <input class="cost-max" type="number" step="100" placeholder="цена до" aria-label="максимальная стоимость"
+              <input class="cost-max" type="number" min="1000" max="1000000" placeholder="цена до" aria-label="максимальная стоимость"
                 value="15000" id="max">
             </div>
           </div>
@@ -110,12 +108,12 @@
             </li>
           </ul>
         </fieldset>
-        <button class="button button-filter" type="button">Показать</button>
+        <button class="button button-filter" type="submit">Показать</button>
       </form>
       <section class="sort">
         <p class="title">Сортировать:</p>
         <select class="select-control" aria-label="Сортировка">
-          <option value="cost">По цене</option>
+          <option value="cost" selected>По цене</option>
           <option value="type">По типу</option>
           <option value="name">По названию</option>
         </select>
@@ -125,7 +123,7 @@
             <div class="sort-item-info">
               <h3 class="title">Sedona</h3>
               <p class="description">Информационный сайт для туристов</p>
-              <button class="button button-info">9 900 ₽</button>
+              <button class="button button-info" type="button">9 900 ₽</button>
             </div>
           </div>
           <div class="sort-item">
@@ -133,7 +131,7 @@
             <div class="sort-item-info">
               <h3 class="title">Pink App</h3>
               <p class="description">Продуктовый лендинг приложения для iOS и Android</p>
-              <button class="button button-info">9 900 ₽</button>
+              <button class="button button-info" type="button">9 900 ₽</button>
             </div>
           </div>
           <div class="sort-item">
@@ -141,7 +139,7 @@
             <div class="sort-item-info">
               <h3 class="title">Barbershop</h3>
               <p class="description">Сайт салона красоты. Для мужчин, да.</p>
-              <button class="button button-info">9 900 ₽</button>
+              <button class="button button-info" type="button">9 900 ₽</button>
             </div>
           </div>
           <div class="sort-item">
@@ -149,7 +147,7 @@
             <div class="sort-item-info">
               <h3 class="title">Mishka</h3>
               <p class="description">Интернет-магазин вязаных игрушек</p>
-              <button class="button button-info">9 900 ₽</button>
+              <button class="button button-info" type="button">9 900 ₽</button>
             </div>
           </div>
           <div class="sort-item">
@@ -157,7 +155,7 @@
             <div class="sort-item-info">
               <h3 class="title">A Plus</h3>
               <p class="description">Лендинг курсов повышения квалификации</p>
-              <button class="button button-info">9 900 ₽</button>
+              <button class="button button-info" type="button">9 900 ₽</button>
             </div>
           </div>
           <div class="sort-item">
@@ -165,7 +163,7 @@
             <div class="sort-item-info">
               <h3 class="title">Кваст</h3>
               <p class="description">Промо-сайт производителя крафтого кваса</p>
-              <button class="button button-info">9 900 ₽</button>
+              <button class="button button-info" type="button">9 900 ₽</button>
             </div>
           </div>
         </div>
@@ -184,17 +182,23 @@
           <a class="pagination-link" href="#">Следующая</a>
         </li>
       </ul>
-    </main>
-    <footer class="index-footer">
       <section class="map">
         <div class="text-wrapper">
           <h3 class="title">Nёrds design studio</h3>
-          <p class="description">191186, Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</p>
-          <p class="description">тел. +7 (812) 275-75-75</p>
+          <address class="address">191186, Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</address>
+          <a class="phone" href="tel:+78122757575">тел. +7 (812) 275-75-75</a>
           <button class="button button-write">Напишите нам</button>
         </div>
-        <img src="#" alt="logo">
-        <img src="#" alt="Карта">
+      </section>
+    </main>
+    <footer class="footer">
+      <section class="map">
+        <div class="text-wrapper">
+          <h3 class="title">Nёrds design studio</h3>
+          <address class="address">191186, Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</address>
+          <a class="phone" href="tel:+78122757575">тел. +7 (812) 275-75-75</a>
+          <button class="button button-write">Напишите нам</button>
+        </div>
       </section>
       <section class="social">
         <ul class="social-list">

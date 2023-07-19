@@ -1,14 +1,16 @@
 <!DOCTYPE html>
 <html lang="ru">
+
   <head>
     <meta charset="UTF-8">
     <link rel="stylesheet" href="styles/styles.css">
     <title>Nerds</title>
   </head>
+
   <body>
-    <header class="index-header">
+    <header class="header">
       <img class="logo" src="#" alt="logo">
-      <nav class="header-nav">
+      <nav class="nav">
         <ul class="navigation-list">
           <li class="navigation-item">
             <a class="navigation-link" href="#">Студия</a>
@@ -26,62 +28,59 @@
         <a class="basket" href="#">Корзина</a>
       </nav>
     </header>
-    <main class="index-main">
+    <main class="main">
       <section class="slider">
         <div class="slider-wrapper">
-          <p class="title">Долго, дорого, скрупулезно.</p>
-          <p class="subtitle">Математически выверенный дизайн для вашего сайта или мобильного приложения.</p>
-          <button class="slider-button" type="button">Узнать больше</button>
-          <img class="slider-image" src="#" alt="Макет на телефонах">
+          <div class="slider-slide">
+            <p class="title">Долго, дорого, скрупулезно.</p>
+            <p class="subtitle">Математически выверенный дизайн для вашего сайта или мобильного приложения.</p>
+            <button class="slider-button" type="button">Узнать больше</button>
+          </div>
+          <div class="slider-slide">
+            <p class="title">Любим математику как никто другой</p>
+            <p class="subtitle">Никакого креатива, только математические формулы для расчета идеальных пропорций</p>
+            <button class="slider-button" type="button">Узнать больше</button>
+          </div>
+          <div class="slider-slide">
+            <p class="title">Только ночь, только хардкор</p>
+            <p class="subtitle">Работать днем, как все? Ма против этого. Ближе к полуночи работа только начинается.</p>
+            <button class="slider-button" type="button">Узнать больше</button>
+          </div>
         </div>
-        <div class="slider-wrapper">
-          <p class="title">Любим математику как никто другой</p>
-          <p class="subtitle">Никакого креатива, только математические формулы для расчета идеальных пропорций</p>
-          <button class="slider-button" type="button">Узнать больше</button>
-          <img class="slider-image" src="#" alt="Макет на мониторах">
-        </div>
-        <div class="slider-wrapper">
-          <p class="title">Только ночь, только хардкор</p>
-          <p class="subtitle">Работать днем, как все? Ма против этого. Ближе к полуночи работа только начинается.</p>
-          <button class="slider-button" type="button">Узнать больше</button>
-          <img class="slider-image" src="#" alt="Макет на телефонах">
-        </div>
-        <ul class="slider-pagination">
-          <li class="slider-pagination-item">
-            <span class="visually-hidden">Кнопка пагинации</span>
+      </section>
+      <section class="order">
+        <ul class="order-list">
+          <li class="order-list-item">
+            <div class="order-item">
+              <img src="#" alt="Макет сайта">
+              <h3 class="title">Веб-сайты</h3>
+              <p class="description">Мир никогда не будет прежним после того как увидит ваш сайт!</p>
+              <button class="button sites-button" type="button">Заказать</button>
+            </div>
           </li>
-          <li class="slider-pagination-item">
-            <span class="visually-hidden">Кнопка пагинации</span>
+          <li class="order-list-item">
+            <div class="order-item">
+              <img src="#" alt="Макет приложения">
+              <h3 class="title">Приложения</h3>
+              <p class="description">Покорите топ-10 приложений в AppStore и Google Play</p>
+              <button class="button app-button" type="button">Заказать</button>
+            </div>
           </li>
-          <li class="slider-pagination-item">
-            <span class="visually-hidden">Кнопка пагинации</span>
+          <li class="order-list-item">
+            <div class="oreder-item">
+              <img src="#" alt="Макет презентации">
+              <h3 class="title">Презентации</h3>
+              <p class="description">Вы даже не подозреваете, насколько вы изумительны!</p>
+              <button class="button presentation-button" type="button">Заказать</button>
+            </div>
           </li>
         </ul>
-      </section>
-      <section class="orders">
-        <div class="sites">
-          <img src="#" alt="Макет сайта">
-          <h3 class="title">Веб-сайты</h3>
-          <p class="description">Мир никогда не будет прежним после того как увидит ваш сайт!</p>
-          <button class="button sites-button" type="button">Заказать</button>
-        </div>
-        <div class="app">
-          <img src="#" alt="Макет приложения">
-          <h3 class="title">Приложения</h3>
-          <p class="description">Покорите топ-10 приложений в AppStore и Google Play</p>
-          <button class="button app-button" type="button">Заказать</button>
-        </div>
-        <div class="presentation">
-          <img src="#" alt="Макет презентации">
-          <h3 class="title">Презентации</h3>
-          <p class="description">Вы даже не подозреваете, насколько вы изумительны!</p>
-          <button class="button presentation-button" type="button">Заказать</button>
-        </div>
       </section>
       <section class="about">
         <div class="text-wrapper">
           <p class="title">Мы - маленькая, но гордая дизайн-студия из Краснодара.</p>
-          <p class="description">Исповедуем принципы минимализма и чистоты. Ставим математический расчет превыше креатива. Работаем не покладая рук, как роботы.</p>
+          <p class="description">Исповедуем принципы минимализма и чистоты. Ставим математический расчет превыше
+            креатива. Работаем не покладая рук, как роботы.</p>
           <h3 class="subtitle">Выполняем заказы на разработку:</h3>
           <ul class="order">
             <li class="order-item">Веб-сайтов любой сложности</li>
@@ -102,30 +101,32 @@
       <section class="examples">
         <a class="examples-link">
           <span class="visually-hidden">HTMLAcademy</span>
+          <img src="#" alt="HTMLAcademy logo">
         </a>
         <a class="examples-link">
           <span class="visually-hidden">Barbershop</span>
+          <img src="#" alt="Barbershop logo">
         </a>
         <a class="examples-link">
           <span class="visually-hidden">Pink</span>
+          <img src="#" alt="Pink logo">
         </a>
         <a class="examples-link">
           <span class="visually-hidden">Mishka</span>
+          <img src="#" alt="Mishka logo">
         </a>
       </section>
       <section class="map">
         <div class="text-wrapper">
           <h3 class="visually-hidden">Как добраться до Nerds studio</h3>
           <p class="title">Nёrds design studio</p>
-          <address class="description">191186, Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</address>
-          <p class="description">тел. +7 (812) 275-75-75</p>
+          <address class="address">191186, Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</address>
+          <a class="phone" href="tel:+78122757575">тел. +7 (812) 275-75-75</a>
           <button class="button button-write">Напишите нам</button>
         </div>
-        <img src="#" alt="logo">
-        <img src="#" alt="Карта">
       </section>
     </main>
-    <footer class="index-footer">
+    <footer class="footer">
       <section class="social">
         <ul class="social-list">
           <li class="social-list-item">
@@ -151,4 +152,5 @@
       </section>
     </footer>
   </body>
+
 </html>
