@@ -1,0 +1,8 @@
+{
+  "scripts": {
+    "serve": "npx nodemon script.js"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.22"
+  }
+}

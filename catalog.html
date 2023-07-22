@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="styles/styles.css">
+    <title>Nerds</title>
+  </head>
+  <body>
+    <header class="header">
+      <img class="logo" src="#" alt="logo">
+      <nav class="nav">
+        <ul class="navigation-list">
+          <li class="navigation-item">
+            <a class="navigation-link" href="#">Студия</a>
+          </li>
+          <li class="navigation-item">
+            <a class="navigation-link" href="#">Клиенты</a>
+          </li>
+          <li class="navigation-item">
+            <a class="navigation-link" href="catalog.html">Магазин</a>
+          </li>
+          <li class="navigation-item">
+            <a class="navigation-link" href="#">Контакты</a>
+          </li>
+        </ul>
+        <a class="card" href="#">Корзина</a>
+      </nav>
+    </header>
+    <main class="main">
+      <h2 class="title">Магазин готовых шаблонов</h2>
+      <form class="filter" action="#" method="get">
+        <fieldset class="filter-cost">
+          <legend class="filter-cost-title">Стоимость:</legend>
+          <div class="fieldset-wrapper">
+            <div class="cost-range">
+              <button class="button-cost" type="button" id="min-cost">
+                <span class="visually-hidden">установить минимальную стоимость</span>
+              </button>
+              <button class="button-cost" type="button" id="max-cost">
+                <span class="visually-hidden">установить максимальную стоимость</span>
+              </button>
+              <span class="cost-range line" id="line"></span>
+              <span class="cost-range line active" id="line-active"></span>
+            </div>
+            <div class="filter-range">
+              <input class="cost-min" type="number" min="0" placeholder="цена от" aria-label="минимальная стоимость"
+                value="0" id="min">
+              <input class="cost-max" type="number" min="1000" max="1000000" placeholder="цена до" aria-label="максимальная стоимость"
+                value="15000" id="max">
+            </div>
+          </div>
+        </fieldset>
+        <fieldset class="filter-group">
+          <legend class="filter-group-title">Сетка:</legend>
+          <ul class="filter-group-list">
+            <li class="filter-group-item">
+              <label class="control">
+                <input class="input-radio" type="radio" name="adaptive" value="hotel" checked>
+                Адаптивная
+              </label>
+            </li>
+            <li class="filter-group-item">
+              <label class="control">
+                <input class="input-radio" type="radio" name="fix" value="motel">
+                Фиксированная
+              </label>
+            </li>
+            <li class="filter-group-item">
+              <label class="control">
+                <input class="input-radio" type="radio" name="rubber" value="apartments">
+                Резиновая
+              </label>
+            </li>
+          </ul>
+        </fieldset>
+        <fieldset class="catalog-filter-group">
+          <legend class="filter-group-title">Особенности:</legend>
+          <ul class="filter-group-list">
+            <li class="filter-group-item">
+              <label class="control">
+                <input class="input-checkbox" type="checkbox" name="slider" checked>
+                Слайдер
+              </label>
+            </li>
+            <li class="filter-group-item">
+              <label class="control">
+                <input class="input-checkbox" type="checkbox" name="advantages">
+                Блок преимуществ
+              </label>
+            </li>
+            <li class="filter-group-item">
+              <label class="control">
+                <input class="input-checkbox" type="checkbox" name="news" checked>
+                Новости
+              </label>
+            </li>
+            <li class="filter-group-item">
+              <label class="control">
+                <input class="input-checkbox" type="checkbox" name="gallery">
+                Галерея
+              </label>
+            </li>
+            <li class="filter-group-item">
+              <label class="control">
+                <input class="input-checkbox" type="checkbox" name="cart">
+                Корзина
+              </label>
+            </li>
+          </ul>
+        </fieldset>
+        <button class="button button-filter" type="submit">Показать</button>
+      </form>
+      <section class="sort">
+        <p class="title">Сортировать:</p>
+        <select class="select-control" aria-label="Сортировка">
+          <option value="cost" selected>По цене</option>
+          <option value="type">По типу</option>
+          <option value="name">По названию</option>
+        </select>
+        <div class="sort-wrapper">
+          <div class="sort-item">
+            <img src="#" alt="макет седоны">
+            <div class="sort-item-info">
+              <h3 class="title">Sedona</h3>
+              <p class="description">Информационный сайт для туристов</p>
+              <button class="button button-info" type="button">9 900 ₽</button>
+            </div>
+          </div>
+          <div class="sort-item">
+            <img src="#" alt="макет Pink">
+            <div class="sort-item-info">
+              <h3 class="title">Pink App</h3>
+              <p class="description">Продуктовый лендинг приложения для iOS и Android</p>
+              <button class="button button-info" type="button">9 900 ₽</button>
+            </div>
+          </div>
+          <div class="sort-item">
+            <img src="#" alt="макет Barbershop">
+            <div class="sort-item-info">
+              <h3 class="title">Barbershop</h3>
+              <p class="description">Сайт салона красоты. Для мужчин, да.</p>
+              <button class="button button-info" type="button">9 900 ₽</button>
+            </div>
+          </div>
+          <div class="sort-item">
+            <img src="#" alt="макет Mishka">
+            <div class="sort-item-info">
+              <h3 class="title">Mishka</h3>
+              <p class="description">Интернет-магазин вязаных игрушек</p>
+              <button class="button button-info" type="button">9 900 ₽</button>
+            </div>
+          </div>
+          <div class="sort-item">
+            <img src="#" alt="макет A Plus">
+            <div class="sort-item-info">
+              <h3 class="title">A Plus</h3>
+              <p class="description">Лендинг курсов повышения квалификации</p>
+              <button class="button button-info" type="button">9 900 ₽</button>
+            </div>
+          </div>
+          <div class="sort-item">
+            <img src="#" alt="макет Кваст">
+            <div class="sort-item-info">
+              <h3 class="title">Кваст</h3>
+              <p class="description">Промо-сайт производителя крафтого кваса</p>
+              <button class="button button-info" type="button">9 900 ₽</button>
+            </div>
+          </div>
+        </div>
+      </section>
+      <ul class="pagination">
+        <li class="pagination-item">
+          <a class="pagination-link pagination-current" href="#">1</a>
+        </li>
+        <li class="pagination-item">
+          <a class="pagination-link" href="#">2</a>
+        </li>
+        <li class="pagination-item">
+          <a class="pagination-link" href="#">3</a>
+        </li>
+        <li class="pagination-item">
+          <a class="pagination-link" href="#">Следующая</a>
+        </li>
+      </ul>
+      <section class="map">
+        <div class="text-wrapper">
+          <h3 class="title">Nёrds design studio</h3>
+          <address class="address">191186, Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</address>
+          <a class="phone" href="tel:+78122757575">тел. +7 (812) 275-75-75</a>
+          <button class="button button-write">Напишите нам</button>
+        </div>
+      </section>
+    </main>
+    <footer class="footer">
+      <section class="map">
+        <div class="text-wrapper">
+          <h3 class="title">Nёrds design studio</h3>
+          <address class="address">191186, Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</address>
+          <a class="phone" href="tel:+78122757575">тел. +7 (812) 275-75-75</a>
+          <button class="button button-write">Напишите нам</button>
+        </div>
+      </section>
+      <section class="social">
+        <ul class="social-list">
+          <li class="social-list-item">
+            <a class="social-link">
+              <span class="visually-hidden">Вконтакте</span>
+            </a>
+          </li>
+          <li class="social-list-item">
+            <a class="social-link">
+              <span class="visually-hidden">Facebook</span>
+            </a>
+          </li>
+          <li class="social-list-item">
+            <a class="social-link">
+              <span class="visually-hidden">Instagram</span>
+            </a>
+          </li>
+        </ul>
+        <div class="text-wrapper">
+          <h2 class="title">Давайте дружить, это выгодно!</h2>
+          <p class="description">Скидка 10% для друзей из социальных сетей.</p>
+        </div>
+      </section>
+    </footer>
+    <script src="script.js"></script>
+  </body>
+</html>
